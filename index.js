@@ -7,7 +7,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 mongoose.set("strictQuery",true);
-mongoose.connect("mongodb+srv://test:12345@cluster0.uwleesu.mongodb.net/schooldb");
+mongoose.connect("mongodb+srv://test:12345@cluster0.ps2darp.mongodb.net/schooldb");
 var db = mongoose.connection;
 db.on("open",()=>console.log("Connected to DB"));
 db.on("error",()=>console.log("Error occurred"));
